@@ -64,6 +64,12 @@ const addRow = async () => {
               <td>${base_unit}</td> 
             </tr>
   `;
+
+    const capital = base_unit.toUpperCase();
+    const content = document.querySelector(".btc-content");
+    content.innerHTML += `
+    <a href="#">${capital}</a>
+  `;
   }
 };
 
