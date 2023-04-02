@@ -30,7 +30,7 @@ const addRow = async () => {
     console.log(e);
   }
 
-  for (let i = 0; i < response.length; i++) {
+  for (let i = 0; i < 10; i++) {
     const name = response[i].name;
     const last = parseFloat(response[i].last);
     const buy = parseFloat(response[i].buy);
