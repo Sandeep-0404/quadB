@@ -4,6 +4,8 @@ const product_route = require("./routes/index");
 const app = express();
 const PORT = process.env.PORT || 4000;
 const connectDB = require("./DB/connect");
+let cors = require("cors");
+app.use(cors());
 
 app.get("/", (req, res) => {
   res.send("hello working");

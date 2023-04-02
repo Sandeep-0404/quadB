@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=Bakbak+One&family=Montserrat:wght@300;400;500;600;700;800&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300&family=Quattrocento&family=Roboto&family=Urbanist:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+    background-color: rgb(13, 17, 28);
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+/* ############## header ##############*/
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+}
+
+/* ############## header ##############*/
+
+/* ############# Heading ################### */
+
+.main_heading {
+    color: rgb(63, 233, 233);
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.white_small {
+    font-size: 1rem;
+    text-transform: lowercase;
+    color: #fff;
+}
+
+.powered {
+    color: #666;
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 0;
+
+}
+
+.blue {
+    color: rgb(63, 233, 233);
+}
+
+/* ############# Heading ################### */
+
+
+/* ###################### BUTTONS_HEADER ####################### */
+
+.contacts {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* ###################### BUTTONS_HEADER ####################### */
+
+
+/*
+########### CHECKBOX ##################
+*/
+
+/* The switch - the box around the slider */
+.switch {
+    font-size: 1rem;
+    position: relative;
+    display: inline-block;
+    width: 3em;
+    height: 1rem;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+
+
+/* ######## BUTTON #########  */
+.telegram-button {
+    padding: 10px;
+    background-color: rgb(18, 159, 159);
+    font-weight: 500;
+    font-size: 1rem;
+    letter-spacing: 0;
+    border-radius: 10px;
+    border: none;
+    color: #fff;
+}
+
+.telegram-button i {
+    font-size: 1.2rem;
+    color: #fff;
+}
+
+/* ######## BUTTON #########  */
+
+/*################ TABLE #########################*/
+
+table {
+    width: 100%;
+    border: none;
+    border-collapse: separate;
+    border-spacing: 0 15px;
+}
+
+.table_heading {
+    color: #8a8383;
+    border: none;
+}
+
+.table_data {
+    background-color: rgba(235, 235, 235, 0.241);
+    border: none;
+}
+
+tr {
+    border-radius: 10px;
+
+}
+
+
+td,
+th {
+    padding: 10px;
+    font-weight: 600;
+    color: white;
+    text-align: center;
+}
+
+.table_heading th {
+    color: #848080;
+}
+
+/*################ TABLE #########################*/
+
+
+.circle_button {
+    color: rgb(63, 233, 233);
+    font-size: 0.8rem;
+    margin-right: 1rem;
+    border: 3px solid rgb(63, 233, 233);
+    border-radius: 50%;
+    padding: 3px;
+}
+
+td:first-child,
+th:first-child {
+    border-radius: 9px 0 0 9px;
+}
+
+
+td:last-child,
+th:last-child {
+    border-radius: 0 9px 9px 0;
+}
+
+/*################ CHECKBOX #########################*/
+.cl-toggle-switch {
+    position: relative;
+}
+
+.cl-switch {
+    position: relative;
+    display: inline-block;
+}
+
+/* Input */
+.cl-switch>input {
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    z-index: -1;
+    position: absolute;
+    right: 6px;
+    top: -8px;
+    display: block;
+    margin: 0;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background-color: rgb(63, 233, 233);
+    outline: none;
+    opacity: 0;
+    transform: scale(1);
+    pointer-events: none;
+    transition: opacity 0.3s 0.1s, transform 0.2s 0.1s;
+}
+
+/* Track */
+.cl-switch>span::before {
+    content: "";
+    float: right;
+    display: inline-block;
+    margin: 5px 0 5px 10px;
+    border-radius: 7px;
+    width: 36px;
+    height: 14px;
+    background-color: rgba(235, 235, 235, 0.241);
+    vertical-align: top;
+    transition: background-color 0.2s, opacity 0.2s;
+}
+
+/* Thumb */
+.cl-switch>span::after {
+    content: "";
+    position: absolute;
+    top: 2px;
+    right: 16px;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+/* Checked */
+.cl-switch>input:checked {
+    right: -10px;
+    background-color: rgb(63, 233, 233);
+}
+
+.cl-switch>input:checked+span::before {
+    background-color: rgba(235, 235, 235, 0.241);
+}
+
+.cl-switch>input:checked+span::after {
+    background-color: rgb(63, 233, 233);
+    transform: translateX(16px);
+}
+
+/* Hover, Focus */
+.cl-switch:hover>input {
+    opacity: 0.04;
+}
+
+.cl-switch>input:focus {
+    opacity: 0.12;
+}
+
+.cl-switch:hover>input:focus {
+    opacity: 0.16;
+}
+
+/* Active */
+.cl-switch>input:active {
+    opacity: 1;
+    transform: scale(0);
+    transition: transform 0s, opacity 0s;
+}
+
+.cl-switch>input:active+span::before {
+    background-color: #8f8f8f;
+}
+
+.cl-switch>input:checked:active+span::before {
+    background-color: rgba(235, 235, 235, 0.241);
+}
+
+/* Disabled */
+.cl-switch>input:disabled {
+    opacity: 0;
+}
+
+.cl-switch>input:disabled+span::before {
+    background-color: #ddd;
+}
+
+.cl-switch>input:checked:disabled+span::before {
+    background-color: #bfdbda;
+}
+
+.cl-switch>input:checked:disabled+span::after {
+    background-color: rgb(63, 233, 233);
+}
+
+/*################ CHECKBOX #########################*/
